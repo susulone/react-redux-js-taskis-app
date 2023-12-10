@@ -1,8 +1,15 @@
 // import { useState } from "react";
 import "./App.css";
+import { Nav } from "../common/Nav";
+import { Outlet } from "react-router-dom";
 
 function App() {
-    return <>App</>;
+    return (
+        <>
+            <Nav />
+            <Outlet />
+        </>
+    );
 }
 
 export default App;
